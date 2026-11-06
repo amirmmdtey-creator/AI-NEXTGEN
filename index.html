@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#070b16">
+<meta name="description" content="AI NEXTGEN؛ مرکز ابزارهای هوش مصنوعی، یادگیری و خلاقیت دیجیتال.">
+<meta property="og:title" content="AI NEXTGEN | فراتر از امروز">
+<title>AI NEXTGEN 5.0 | فراتر از امروز</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070b16;--panel:#0d1729;--panel2:#111f36;--text:#f4f7ff;--muted:#9ba9c2;--blue:#5b9cff;--cyan:#54e5e0;--violet:#a78bfa;--line:#ffffff19;--red:#ff8295}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 10% 0%,#1b4d8438,transparent 35%),radial-gradient(ellipse at 95% 15%,#603c8b25,transparent 30%),var(--bg);color:var(--text);font-family:Vazirmatn,Tahoma,sans-serif;min-height:100vh}
+button,input,textarea,select{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}
+.layout{display:grid;grid-template-columns:260px 1fr;min-height:100vh}.sidebar{position:sticky;top:0;height:100vh;padding:22px 16px;background:#080f1eeF;border-left:1px solid var(--line);display:flex;flex-direction:column;z-index:10}
+.brand{display:flex;align-items:center;gap:11px;direction:ltr;font-weight:900;font-size:19px;padding:5px 8px 25px}.brandmark{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(140deg,#9beaff,#4778f4 58%,#a78bfa);color:#07101e;font-size:23px;box-shadow:0 0 25px #4c9cff55}
+.nav-label{font-size:10px;color:#7284a3;letter-spacing:1px;padding:13px 12px 6px}.navbtn{display:flex;align-items:center;gap:12px;width:100%;padding:11px 13px;border:1px solid transparent;border-radius:12px;background:transparent;color:#bdc9dd;text-align:right;margin:2px 0;font-size:13px}.navbtn:hover,.navbtn.active{background:linear-gradient(100deg,#5b9cff20,#54e5e010);border-color:#5b9cff38;color:white}.navbtn .ni{width:23px;text-align:center;font-size:17px}.side-bottom{margin-top:auto}.profile-mini{display:flex;gap:10px;align-items:center;padding:13px 9px;border-top:1px solid var(--line);margin-top:15px}.avatar{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--blue),var(--violet));font-weight:900;color:#07101e;flex-shrink:0}
+main{min-width:0}.topbar{height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 4%;border-bottom:1px solid var(--line);background:#070b16b8;backdrop-filter:blur(18px);position:sticky;top:0;z-index:8}.top-title{font-size:14px;font-weight:800}.top-actions{display:flex;align-items:center;gap:10px}.status{font-size:11px;color:var(--cyan);border:1px solid #54e5e044;background:#54e5e010;padding:6px 10px;border-radius:30px}
+.content{width:min(1180px,92%);margin:28px auto 60px}.page{display:none;animation:fade .25s ease}.page.active{display:block}@keyframes fade{from{opacity:.4;transform:translateY(5px)}to{opacity:1;transform:none}}
+.hero{padding:30px 0 25px;display:grid;grid-template-columns:1.2fr .8fr;gap:22px;align-items:center}.eyebrow,.tag{display:inline-flex;align-items:center;gap:7px;color:var(--cyan);background:#54e5e012;border:1px solid #54e5e044;padding:5px 11px;border-radius:30px;font-size:11px}.hero h1{font-size:clamp(34px,5vw,58px);line-height:1.3;margin:16px 0}.grad{background:linear-gradient(100deg,#fff,#8bdcff 55%,#b29cff);background-clip:text;color:transparent}.muted{color:var(--muted)}.hero p{max-width:650px;font-size:14px;line-height:2}.hero-art{min-height:245px;display:grid;place-items:center;position:relative}.orb{width:220px;height:220px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#d4fbff,#62baff 14%,#596ef5 42%,#392c72 68%,#10182c 76%);box-shadow:0 0 65px #4c9cff55;display:grid;place-items:center;font-size:86px;font-weight:900;text-shadow:0 0 24px #7de6ff;animation:float 6s ease-in-out infinite}@keyframes float{50%{transform:translateY(-9px)}}
+.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}.btn{border:0;border-radius:11px;padding:10px 16px;font-weight:800;font-size:12px}.primary{background:linear-gradient(110deg,var(--blue),var(--cyan));color:#06111d}.secondary{background:#ffffff0b;border:1px solid var(--line);color:var(--text)}.danger{background:#ff82951a;border:1px solid #ff829555;color:#ffb1bd}
+.metrics,.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.metric,.card,.panel{background:linear-gradient(145deg,#ffffff0c,#ffffff05);border:1px solid var(--line);border-radius:18px;box-shadow:0 15px 55px #276bce12}.metric{text-align:center;padding:15px}.metric b{display:block;color:var(--cyan);font-size:22px}.metric span{font-size:11px;color:var(--muted)}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:30px 0 17px}.section-head h2{font-size:23px;margin:2px 0}.kicker{font-size:10px;letter-spacing:1.5px;color:var(--cyan);direction:ltr;text-align:right}.section-head p{font-size:12px;color:var(--muted);margin:0}
+.grid{grid-template-columns:repeat(3,1fr)}.card{padding:19px;transition:.2s}.card:hover{transform:translateY(-3px);border-color:#66dce066}.ico{width:45px;height:45px;border-radius:14px;display:grid;place-items:center;font-size:22px;background:#5b9cff20;border:1px solid #9ccaff22;margin-bottom:11px}.card h3{font-size:16px;margin:4px 0}.card p{font-size:12px;color:var(--muted);line-height:1.9}.card .small-link{color:var(--cyan);font-size:12px;display:inline-block;margin-top:10px;font-weight:700}
+.panel{padding:20px}.two{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field{width:100%;background:#050b16;border:1px solid var(--line);border-radius:11px;color:white;padding:11px 12px;margin:6px 0 13px;outline:none}.field:focus{border-color:var(--cyan)}textarea.field{min-height:100px;resize:vertical}label{font-size:12px;color:#cbd6e8}.result{background:#050b16;border:1px solid var(--line);border-radius:12px;padding:14px;min-height:55px;white-space:pre-wrap;font-size:13px;line-height:2}.chat-shell{display:grid;grid-template-columns:220px 1fr;gap:14px;min-height:510px}.chat-list{border:1px solid var(--line);border-radius:16px;padding:13px;background:#0a1323}.chat-list button{width:100%;text-align:right;margin:4px 0;padding:9px;border:1px solid transparent;background:transparent;color:#c4d0e4;border-radius:9px;font-size:12px}.chat-list button:hover{background:#ffffff0b}.chat-main{border:1px solid var(--line);border-radius:16px;background:#0a1323;display:flex;flex-direction:column;min-height:510px;overflow:hidden}.chat-head{padding:14px 17px;border-bottom:1px solid var(--line);font-weight:800}.messages{padding:17px;flex:1;overflow:auto;display:flex;flex-direction:column;gap:12px}.bubble{max-width:85%;padding:11px 14px;border-radius:14px;font-size:13px;line-height:2;white-space:pre-wrap}.bubble.user{align-self:flex-start;background:#255ca64d;border:1px solid #5b9cff55}.bubble.bot{align-self:flex-end;background:#ffffff0a;border:1px solid var(--line)}.chat-compose{display:flex;gap:8px;padding:12px;border-top:1px solid var(--line)}.chat-compose input{margin:0;flex:1}.notice{font-size:11px;color:#f5d58a;background:#f5d58a12;border:1px solid #f5d58a33;border-radius:10px;padding:10px;margin:12px 0}
+.course-progress{height:6px;background:#ffffff16;border-radius:20px;overflow:hidden;margin:12px 0}.course-progress span{display:block;height:100%;background:linear-gradient(90deg,var(--cyan),var(--violet))}.course-foot,.rowline{display:flex;justify-content:space-between;align-items:center;gap:10px}.rowline{padding:10px 0;border-bottom:1px solid var(--line);font-size:12px;color:var(--muted)}.rowline strong{color:white}.smallbtn{border:1px solid var(--line);background:#ffffff0b;color:white;border-radius:9px;padding:7px 10px;font-size:11px}.smallbtn.done{color:var(--cyan);border-color:#54e5e077}
+.project{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-top:1px solid var(--line)}.project small{display:block;color:var(--muted)}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#dffaff;color:#06111d;padding:10px 16px;border-radius:12px;display:none;z-index:30;box-shadow:0 10px 35px #0007;font-size:12px}.hidden{display:none!important}.auth-wrap{max-width:480px;margin:35px auto}.auth-wrap .panel{padding:25px}.avatar-large{width:76px;height:76px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--blue),var(--violet));color:#06111d;font-size:30px;font-weight:900;margin:0 auto 12px}
+footer{border-top:1px solid var(--line);padding:25px 4%;color:var(--muted);font-size:11px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:900px){.layout{grid-template-columns:1fr}.sidebar{position:fixed;right:-280px;width:260px;transition:.25s;box-shadow:0 0 40px #0008}.sidebar.open{right:0}.topbar{height:66px}.mobile-menu{display:inline-flex!important}.hero{grid-template-columns:1fr}.hero-art{min-height:210px}.orb{width:180px;height:180px}.metrics{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.grid{grid-template-columns:1fr}.two,.chat-shell{grid-template-columns:1fr}.chat-list{display:none}.chat-main{min-height:460px}.content{margin-top:15px}.hero{padding-top:12px}.section-head{display:block}.hero-art{min-height:190px}.orb{width:155px;height:155px;font-size:65px}.top-actions .status{display:none}}
+.mobile-menu{display:none}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+<a class="brand" href="#" onclick="showPage('home');return false"><span class="brandmark">N</span><span>AI NEXTGEN</span></a>
+<div class="nav-label">فضای کاری</div>
+<button class="navbtn active" data-page="home"><span class="ni">⌂</span>داشبورد</button>
+<button class="navbtn" data-page="chat"><span class="ni">✧</span>چت هوش مصنوعی</button>
+<button class="navbtn" data-page="tools"><span class="ni">◈</span>مرکز ابزارها</button>
+<button class="navbtn" data-page="academy"><span class="ni">▤</span>آکادمی آموزشی</button>
+<div class="nav-label">ساخت و مدیریت</div>
+<button class="navbtn" data-page="lab"><span class="ni">⌘</span>آزمایشگاه کدنویسی</button>
+<button class="navbtn" data-page="prompts"><span class="ni">✦</span>پرامپت‌ساز</button>
+<button class="navbtn" data-page="profile"><span class="ni">◎</span>پروفایل من</button>
+<div class="side-bottom"><a class="navbtn" href="https://t.me/NEXTGEN_FA" target="_blank" rel="noopener"><span class="ni">➤</span>کانال تلگرام</a><div class="profile-mini"><div class="avatar" id="miniAvatar">N</div><div><b id="miniName" style="font-size:12px">مهمان NEXTGEN</b><div class="muted" style="font-size:10px" id="miniEmail">وارد نشده‌اید</div></div></div></div>
+</aside>
+<main>
+<header class="topbar"><div style="display:flex;align-items:center;gap:12px"><button class="btn secondary mobile-menu" id="mobileMenu">☰</button><div class="top-title" id="topTitle">داشبورد</div></div><div class="top-actions"><span class="status">● نسخه 5.0</span><button class="btn secondary" onclick="showPage('profile')">پروفایل من</button></div></header>
+<div class="content">
+<section class="page active" id="page-home">
+<div class="hero"><div><span class="eyebrow">✦ نسل تازه یادگیری و خلاقیت دیجیتال</span><h1>فراتر از امروز؛<br><span class="grad">آینده را بساز.</span></h1><p class="muted">به AI NEXTGEN خوش آمدی؛ فضای اختصاصی تو برای یادگیری، ساخت پروژه، کشف ابزارهای هوش مصنوعی و مدیریت مسیر پیشرفت.</p><div class="actions"><button class="btn primary" onclick="showPage('chat')">شروع گفت‌وگو ←</button><button class="btn secondary" onclick="showPage('academy')">ورود به آکادمی</button></div></div><div class="hero-art"><div class="orb">N</div></div></div>
+<div class="metrics"><div class="metric"><b>AI</b><span>هوش مصنوعی</span></div><div class="metric"><b>06</b><span>مسیر آموزشی</span></div><div class="metric"><b id="metricProjects">۰</b><span>پروژه‌های من</span></div><div class="metric"><b id="metricProgress">۰٪</b><span>پیشرفت من</span></div></div>
+<div class="section-head"><div><div class="kicker">QUICK ACCESS</div><h2>دسترسی سریع</h2><p>از اینجا کار خودت را شروع کن.</p></div></div>
+<div class="grid"><article class="card"><div class="ico">✧</div><h3>چت هوش مصنوعی</h3><p>فضای گفت‌وگوی داخلی با امکان نگهداری تاریخچه محلی.</p><a class="small-link" href="#" onclick="showPage('chat');return false">ورود به چت ←</a></article><article class="card"><div class="ico">▤</div><h3>آکادمی NEXTGEN</h3><p>مسیرهای آموزشی مقدماتی برای مهارت‌های دیجیتال.</p><a class="small-link" href="#" onclick="showPage('academy');return false">مشاهده دوره‌ها ←</a></article><article class="card"><div class="ico">◎</div><h3>پروفایل کاربری</h3><p>نام و ایمیل نمایشی خودت را در این مرورگر تنظیم کن.</p><a class="small-link" href="#" onclick="showPage('profile');return false">مدیریت پروفایل ←</a></article></div>
+</section>
+
+<section class="page" id="page-chat">
+<div class="section-head"><div><div class="kicker">NEXTGEN AI CHAT</div><h2>چت هوش مصنوعی</h2><p>رابط گفت‌وگوی داخلی AI NEXTGEN.</p></div><button class="btn secondary" id="newChat">＋ گفت‌وگوی جدید</button></div>
+<div class="notice" id="chatNotice">چت AI از طریق سرور امن Netlify به مدل هوش مصنوعی متصل می‌شود. برای فعال‌شدن پاسخ‌ها، مدیر سایت باید کلید API را در تنظیمات امن Netlify ثبت کند.</div>
+<div class="chat-shell"><aside class="chat-list"><b style="font-size:12px">گفت‌وگوهای اخیر</b><div id="chatHistory"></div></aside><div class="chat-main"><div class="chat-head">✧ دستیار NEXTGEN <span id="aiStatus" class="muted" style="font-size:10px;font-weight:400">· آماده اتصال</span></div><div class="messages" id="messages"><div class="bubble bot">سلام! به چت AI NEXTGEN خوش آمدی. چه چیزی می‌خواهی یاد بگیری یا بسازی؟</div></div><div class="chat-compose"><input class="field" id="chatInput" placeholder="پیامت را بنویس..." autocomplete="off"><button class="btn primary" id="sendChat">ارسال</button></div></div></div>
+</section>
+
+<section class="page" id="page-tools">
+<div class="section-head"><div><div class="kicker">AI TOOLS CENTER</div><h2>مرکز ابزارهای هوشمند</h2><p>ابزار مناسب کارت را پیدا کن.</p></div></div>
+<input class="field" id="toolSearch" placeholder="جست‌وجوی ابزار...">
+<div class="grid" id="toolGrid">
+<article class="card tool" data-search="chatgpt چت جی پی تی"><div class="ico">✧</div><span class="tag">دستیار هوشمند</span><h3>ChatGPT</h3><p>ایده‌پردازی، یادگیری، نوشتن و حل مسئله.</p><a class="small-link" href="https://chatgpt.com/" target="_blank" rel="noopener">باز کردن ابزار ↗</a></article>
+<article class="card tool" data-search="تصویر طراحی عکس canva"><div class="ico">◉</div><span class="tag">تصویرسازی</span><h3>ساخت تصویر</h3><p>تبدیل ایده‌ها به تصویر و طرح‌های خلاقانه.</p><a class="small-link" href="https://www.canva.com/ai-image-generator/" target="_blank" rel="noopener">مشاهده ابزار ↗</a></article>
+<article class="card tool" data-search="کدنویسی برنامه نویسی code"><div class="ico">⌘</div><span class="tag">کدنویسی</span><h3>Replit</h3><p>نوشتن و آزمایش کد در محیط آنلاین.</p><a class="small-link" href="https://replit.com/" target="_blank" rel="noopener">ورود به محیط ↗</a></article>
+<article class="card tool" data-search="زبان ترجمه نوشتن grammar"><div class="ico">文</div><span class="tag">زبان و نوشتن</span><h3>LanguageTool</h3><p>کمک به اصلاح متن و نگارش.</p><a class="small-link" href="https://languagetool.org/" target="_blank" rel="noopener">مشاهده ابزار ↗</a></article>
+<article class="card tool" data-search="ارائه اسلاید پاورپوینت"><div class="ico">▤</div><span class="tag">ارائه</span><h3>Canva Presentations</h3><p>ساخت اسلایدهای مرتب و چشم‌نواز.</p><a class="small-link" href="https://www.canva.com/presentations/" target="_blank" rel="noopener">ساخت ارائه ↗</a></article>
+<article class="card tool" data-search="صدا موسیقی audio bandlab"><div class="ico">♫</div><span class="tag">صدا و رسانه</span><h3>BandLab</h3><p>ضبط، ویرایش و ساخت محتوای صوتی.</p><a class="small-link" href="https://www.bandlab.com/" target="_blank" rel="noopener">ورود به استودیو ↗</a></article>
+</div><p id="emptyTools" class="muted hidden">ابزاری پیدا نشد.</p>
+</section>
+
+<section class="page" id="page-academy">
+<div class="section-head"><div><div class="kicker">NEXTGEN ACADEMY</div><h2>آکادمی مهارت‌های آینده</h2><p>دوره‌ها را تکمیل کن تا پیشرفتت ثبت شود.</p></div></div><div class="grid" id="courseGrid"></div>
+</section>
+
+<section class="page" id="page-lab">
+<div class="section-head"><div><div class="kicker">CREATIVE LAB</div><h2>آزمایشگاه کدنویسی</h2><p>کد HTML بنویس و پیش‌نمایش آن را ببین.</p></div></div>
+<div class="panel"><label>کد HTML<textarea class="field" id="codeInput" spellcheck="false"><h1>سلام از AI NEXTGEN!</h1><p>اولین صفحه من ساخته شد.</p></textarea></label><div class="actions"><button class="btn primary" id="preview">نمایش پیش‌نمایش</button><button class="btn secondary" id="resetCode">بازنشانی</button></div><iframe id="previewFrame" title="پیش‌نمایش کد" sandbox="" style="width:100%;height:230px;background:white;border:1px solid var(--line);border-radius:12px;margin-top:14px"></iframe><p class="muted" style="font-size:10px">پیش‌نمایش در محیط جداگانه و محدود اجرا می‌شود.</p></div>
+</section>
+
+<section class="page" id="page-prompts">
+<div class="section-head"><div><div class="kicker">PROMPT STUDIO</div><h2>استودیوی ساخت پرامپت</h2><p>برای ابزارهای هوش مصنوعی دستور دقیق بساز.</p></div></div>
+<div class="panel"><div class="two"><label>موضوع یا ایده<input class="field" id="topic" placeholder="مثلاً طراحی لوگوی یک برند"></label><label>نوع خروجی<select class="field" id="kind"><option>متن حرفه‌ای</option><option>ایده و سناریو</option><option>کد برنامه‌نویسی</option><option>تصویر خلاقانه</option><option>برنامه آموزشی</option></select></label></div><label>سبک پاسخ<select class="field" id="tone"><option>دقیق و حرفه‌ای</option><option>ساده و قابل فهم</option><option>خلاقانه و متفاوت</option><option>مرحله‌به‌مرحله</option></select></label><div class="actions"><button class="btn primary" id="makePrompt">ساخت پرامپت</button><button class="btn secondary" id="copyPrompt">کپی متن</button></div><div class="result" id="promptResult">پرامپت ساخته‌شده اینجا نمایش داده می‌شود.</div></div>
+</section>
+
+<section class="page" id="page-profile">
+<div class="section-head"><div><div class="kicker">MY PROFILE</div><h2>پروفایل من</h2><p>اطلاعات نمایشی حساب خودت را تنظیم کن.</p></div></div>
+<div class="auth-wrap"><div class="panel" style="text-align:center"><div class="avatar-large" id="profileAvatar">N</div><h3 id="profileTitle">پروفایل مهمان</h3><p class="muted" style="font-size:12px">تنظیمات محلی این دستگاه</p><label style="display:block;text-align:right">نام نمایشی<input class="field" id="profileName" placeholder="نام خودت را وارد کن"></label><label style="display:block;text-align:right">ایمیل<input class="field" id="profileEmail" type="email" placeholder="name@example.com"></label><div class="notice" style="text-align:right">ورود گوگل در این فایل هنوز فعال نیست. برای ورود واقعی با Gmail باید Firebase Authentication را به پروژه وصل و دامنه سایت را مجاز کنی. این فرم فقط پروفایل محلی می‌سازد و احراز هویت امن نیست.</div><div class="actions" style="justify-content:center"><button class="btn primary" id="saveProfile">ذخیره پروفایل</button><button class="btn secondary" id="clearProfile">خروج از پروفایل</button></div></div></div>
+</section>
+</div>
+<footer><span>© <span id="year"></span> AI NEXTGEN</span><span>EXPLORE · LEARN · CREATE · INNOVATE</span><a href="https://t.me/NEXTGEN_FA" target="_blank" rel="noopener">کانال رسمی تلگرام @NEXTGEN_FA ↗</a></footer>
+</main></div><div class="toast" id="toast" role="status"></div>
+<script>
+const $=id=>document.getElementById(id);
+const titles={home:'داشبورد',chat:'چت هوش مصنوعی',tools:'مرکز ابزارها',academy:'آکادمی آموزشی',lab:'آزمایشگاه کدنویسی',prompts:'پرامپت‌ساز',profile:'پروفایل من'};
+let data={done:[],projects:[],profile:{name:'',email:''},chats:[],activeChat:null};
+try{data={...data,...JSON.parse(localStorage.getItem('ainextgen_v5')||'{}')}}catch(e){}
+function save(){try{localStorage.setItem('ainextgen_v5',JSON.stringify(data))}catch(e){toast('ذخیره‌سازی مرورگر در دسترس نیست.')}renderDashboard();renderProfile();renderChatHistory()}
+function toast(s){$('toast').textContent=s;$('toast').style.display='block';clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>$('toast').style.display='none',2200)}
+function showPage(name){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));$('page-'+name).classList.add('active');document.querySelectorAll('.navbtn[data-page]').forEach(b=>b.classList.toggle('active',b.dataset.page===name));$('topTitle').textContent=titles[name]||'AI NEXTGEN';$('sidebar').classList.remove('open');window.scrollTo({top:0,behavior:'smooth'})}
+document.querySelectorAll('.navbtn[data-page]').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.page)));
+$('mobileMenu').onclick=()=>$('sidebar').classList.toggle('open');
+const courses=[['ai','✧','هوش مصنوعی','مفاهیم پایه، کاربردها و پرامپت‌نویسی.'],['py','⌘','برنامه‌نویسی Python','متغیرها، شرط‌ها و ساخت برنامه‌های کوچک.'],['web','◎','طراحی وب','HTML، CSS و JavaScript.'],['design','◈','طراحی گرافیک','رنگ، ترکیب‌بندی و هویت بصری.'],['video','▷','تدوین ویدئو','برش، صدا، زیرنویس و روایت تصویری.'],['data','▥','داده و تحلیل','جدول‌ها، نمودارها و تحلیل داده.']];
+function renderCourses(){$('courseGrid').innerHTML=courses.map(c=>{let d=data.done.includes(c[0]);return `<article class="card"><div class="ico">${c[1]}</div><span class="tag">مسیر مقدماتی</span><h3>${c[2]}</h3><p>${c[3]}</p><div class="course-progress"><span style="width:${d?100:0}%"></span></div><div class="course-foot"><span class="muted" style="font-size:11px">${d?'تکمیل‌شده':'آماده شروع'}</span><button class="smallbtn ${d?'done':''}" data-course="${c[0]}">${d?'✓ تکمیل شد':'ثبت تکمیل'}</button></div></article>`}).join('');document.querySelectorAll('[data-course]').forEach(b=>b.onclick=()=>{let id=b.dataset.course;data.done=data.done.includes(id)?data.done.filter(x=>x!==id):[...data.done,id];save();renderCourses()})}
+function renderDashboard(){let n=data.done.length,p=Math.round(n/6*100);$('doneCount')&&($('doneCount').textContent=n+' از ۶');$('metricProgress').textContent=p+'٪';$('metricProjects').textContent=data.projects.length}
+function renderProfile(){let p=data.profile||{};let name=p.name||'مهمان NEXTGEN';$('miniName').textContent=name;$('miniEmail').textContent=p.email||'وارد نشده‌اید';$('miniAvatar').textContent=(name[0]||'N').toUpperCase();$('profileAvatar').textContent=(name[0]||'N').toUpperCase();$('profileTitle').textContent=p.name?'سلام، '+p.name:'پروفایل مهمان';$('profileName').value=p.name||'';$('profileEmail').value=p.email||''}
+$('saveProfile').onclick=()=>{let name=$('profileName').value.trim(),email=$('profileEmail').value.trim();if(!name)return toast('نام نمایشی را وارد کن.');if(email&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))return toast('ایمیل را بررسی کن.');data.profile={name,email};save();toast('پروفایل محلی ذخیره شد.')};
+$('clearProfile').onclick=()=>{data.profile={name:'',email:''};save();toast('پروفایل محلی پاک شد.')};
+$('makePrompt').onclick=()=>{let t=$('topic').value.trim();if(!t)return toast('اول موضوع را وارد کن.');$('promptResult').textContent=`در نقش یک متخصص عمل کن. درباره «${t}» یک ${$('kind').value} با سبک ${$('tone').value} تولید کن. پاسخ را منظم، کاربردی و قابل فهم بنویس؛ مثال‌های مناسب و نکات مهم را اضافه کن و اگر اطلاعات کافی نداری سؤال بپرس.`};
+$('copyPrompt').onclick=async()=>{try{await navigator.clipboard.writeText($('promptResult').textContent);toast('پرامپت کپی شد.')}catch(e){toast('متن را به‌صورت دستی کپی کن.')}};
+$('preview').onclick=()=>$('previewFrame').srcdoc=$('codeInput').value;
+$('resetCode').onclick=()=>{$('codeInput').value='<h1>سلام از AI NEXTGEN!</h1>\\n<p>اولین صفحه من ساخته شد.</p>';$('preview').click()};
+$('toolSearch').addEventListener('input',()=>{let q=$('toolSearch').value.toLocaleLowerCase('fa'),count=0;document.querySelectorAll('.tool').forEach(el=>{let ok=(el.innerText+' '+el.dataset.search).toLocaleLowerCase('fa').includes(q);el.style.display=ok?'':'none';if(ok)count++});$('emptyTools').classList.toggle('hidden',count>0)});
+function currentChat(){return data.chats.find(c=>c.id===data.activeChat)}
+function createChat(){let c={id:Date.now().toString(),title:'گفت‌وگوی جدید',messages:[{role:'bot',text:'سلام! به چت AI NEXTGEN خوش آمدی. چه چیزی می‌خواهی یاد بگیری یا بسازی؟'}]};data.chats.unshift(c);data.activeChat=c.id;save();renderChat()}
+function renderChat(){let c=currentChat();$('messages').innerHTML='';if(!c){$('messages').innerHTML='<div class="bubble bot">برای شروع، گفت‌وگوی جدید بساز.</div>';return}c.messages.forEach(m=>{let el=document.createElement('div');el.className='bubble '+(m.role==='user'?'user':'bot');el.textContent=m.text;$('messages').appendChild(el)});$('messages').scrollTop=$('messages').scrollHeight}
+function renderChatHistory(){$('chatHistory').innerHTML=data.chats.map(c=>`<button data-chat="${c.id}">▹ ${escapeHtml(c.title)}</button>`).join('')||'<p class="muted" style="font-size:11px">هنوز گفت‌وگویی نیست.</p>';document.querySelectorAll('[data-chat]').forEach(b=>b.onclick=()=>{data.activeChat=b.dataset.chat;renderChat();renderChatHistory()})}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+let chatBusy=false;
+async function sendMessage(){
+  const input=$('chatInput'), send=$('sendChat'), status=$('aiStatus');
+  const text=input.value.trim();
+  if(!text || chatBusy)return;
+  if(!currentChat())createChat();
+  const c=currentChat();
+  c.messages.push({role:'user',text});
+  if(c.messages.filter(m=>m.role==='user').length===1)c.title=text.slice(0,26);
+  input.value=''; save(); renderChat();
+  chatBusy=true; send.disabled=true; send.textContent='در حال پاسخ...';
+  status.textContent='· در حال اتصال به هوش مصنوعی';
+  try{
+    const history=c.messages
+      .filter(m=>m.role==='user'||m.role==='bot')
+      .slice(-24)
+      .map(m=>({role:m.role==='user'?'user':'assistant',content:m.text}));
+    const response=await fetch('/api/chat',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({messages:history})
+    });
+    const result=await response.json().catch(()=>({}));
+    if(!response.ok)throw new Error(result.error||'اتصال به هوش مصنوعی انجام نشد.');
+    if(!result.reply)throw new Error('پاسخی از سرویس دریافت نشد.');
+    const active=currentChat();
+    if(active && active.id===c.id){
+      active.messages.push({role:'bot',text:result.reply});
+      save(); renderChat();
+    }
+    status.textContent='· متصل به هوش مصنوعی';
+  }catch(err){
+    const active=currentChat();
+    const msg=err.message==='Failed to fetch'
+      ?'ارتباط با سرور برقرار نشد. مطمئن شو سایت روی Netlify منتشر شده و Function فعال است.'
+      :err.message;
+    if(active && active.id===c.id){
+      active.messages.push({role:'bot',text:'⚠️ '+msg});
+      save(); renderChat();
+    }
+    status.textContent='· اتصال برقرار نیست';
+  }finally{
+    chatBusy=false; send.disabled=false; send.textContent='ارسال'; input.focus();
+  }
+}
+$('sendChat').onclick=sendMessage;
+$('chatInput').addEventListener('keydown',e=>{if(e.key==='Enter')sendMessage()});
+$('newChat').onclick=()=>{if(chatBusy)return;createChat()};
+$('year').textContent=new Date().getFullYear();renderCourses();renderDashboard();renderProfile();renderChatHistory();if(data.activeChat&&currentChat())renderChat();else if(data.chats.length){data.activeChat=data.chats[0].id;renderChat()}$('preview').click();
+</script>
+</body>
+</html>
